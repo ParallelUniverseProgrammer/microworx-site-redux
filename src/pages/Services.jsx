@@ -1,4 +1,5 @@
 import { Monitor, Server, Shield, Wrench, Cloud, Database } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
@@ -54,9 +55,9 @@ const Services = () => {
               <p className="text-gray-800 leading-relaxed mb-4">
                 {service.description}
               </p>
-              <a href="/contact" className="text-primary font-semibold hover:text-brand-red inline-flex items-center">
+              <Link to="/contact" className="text-primary font-semibold hover:text-brand-red inline-flex items-center">
                 Learn more &rarr;
-              </a>
+              </Link>
             </div>
           ))}
         </div>
@@ -70,9 +71,9 @@ const Services = () => {
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
               We know every problem is different. Call us to discuss what you need.
             </p>
-            <a href="/contact" className="inline-block bg-primary text-white px-6 py-3 rounded-md font-bold hover:bg-brand-red transition-colors">
+            <Link to="/contact" className="inline-block bg-primary text-white px-6 py-3 rounded-md font-bold hover:bg-brand-red transition-colors">
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </div>

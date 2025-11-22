@@ -1,4 +1,5 @@
 import { Award, ThumbsUp, MapPin, Wrench, Cpu, CheckCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import repairBayImg from '../assets/repair-bay.jpg';
 import dataMigrationImg from '../assets/data-migration.jpg';
 
@@ -172,9 +173,9 @@ const About = () => {
           <p className="text-xl text-blue-50 mb-10">
             Call us or stop in to set up an appointment. We look forward to working with you.
           </p>
-          <a href="/contact" className="bg-white text-primary px-10 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all shadow-lg inline-block transform hover:-translate-y-1">
+          <Link to="/contact" className="bg-white text-primary px-10 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all shadow-lg inline-block transform hover:-translate-y-1">
             Contact Us Today
-          </a>
+          </Link>
         </div>
       </section>
     </div>

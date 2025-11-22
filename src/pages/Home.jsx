@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Home = () => {
   return (
     <div className="bg-white">
@@ -17,12 +19,12 @@ const Home = () => {
               Since 1994, Microworx has provided Rochester with reliable computer sales, fast repairs, and friendly support. We are your local technology partner.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="/contact" className="bg-brand-red text-white px-6 py-3 rounded-md font-bold hover:bg-red-800 transition-all shadow-lg transform hover:-translate-y-0.5">
+              <Link to="/contact" className="bg-brand-red text-white px-6 py-3 rounded-md font-bold hover:bg-red-800 transition-all shadow-lg transform hover:-translate-y-0.5">
                 Get a Quote
-              </a>
-              <a href="/services" className="bg-white text-secondary px-6 py-3 rounded-md font-bold hover:bg-gray-100 transition-all shadow-lg transform hover:-translate-y-0.5">
+              </Link>
+              <Link to="/services" className="bg-white text-secondary px-6 py-3 rounded-md font-bold hover:bg-gray-100 transition-all shadow-lg transform hover:-translate-y-0.5">
                 Our Services
-              </a>
+              </Link>
             </div>
           </div>
         </div>

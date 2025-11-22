@@ -1,4 +1,5 @@
 import { Laptop, Monitor, Wrench, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Products = () => {
   return (
@@ -55,10 +56,10 @@ const Products = () => {
               Call or visit us. We'll help you find a computer that fits your budget and needs.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a href="/contact" className="bg-primary text-white px-6 py-3 rounded-md font-bold hover:bg-brand-red transition-colors inline-flex items-center justify-center">
+              <Link to="/contact" className="bg-primary text-white px-6 py-3 rounded-md font-bold hover:bg-brand-red transition-colors inline-flex items-center justify-center">
                 <Phone className="mr-2 h-5 w-5" />
                 Contact Us
-              </a>
+              </Link>
               <a href="tel:5852710050" className="bg-white text-secondary px-6 py-3 rounded-md font-bold hover:bg-gray-100 transition-colors">
                 Call (585) 271-0050
               </a>

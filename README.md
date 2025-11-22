@@ -60,6 +60,24 @@ Preview the production build locally:
 npm run preview
 ```
 
+## Deployment
+
+This project is configured to be deployed to GitHub Pages.
+
+### Steps to Deploy
+
+1.  **Configure Base URL**: Ensure `vite.config.js` has the correct `base` path matching your repository name (e.g., `/microworx-site-redux/`).
+2.  **Run Deploy Script**:
+    ```bash
+    npm run deploy
+    ```
+    This script will:
+    -   Build the project for production.
+    -   Copy `index.html` to `404.html` to handle client-side routing on GitHub Pages.
+    -   Push the `dist` folder to the `gh-pages` branch of your repository.
+
+3.  **GitHub Settings**: Go to your repository settings on GitHub -> **Pages** and ensure the source is set to the `gh-pages` branch.
+
 ## License
 
 [Add License Information Here]
