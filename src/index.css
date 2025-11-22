@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #800000; /* Maroon */
+  --color-secondary: #1a1a1a; /* Dark Gray/Almost Black */
+  --color-brand-red: #8f1923; /* Original Microworx Red */
+  --color-brand-gray-light: #f3f4f6; /* Light Gray for backgrounds */
+  --color-brand-gray-dark: #4b5563; /* Dark Gray for text */
+}
